@@ -1,0 +1,251 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(50, 50, 50);
+}
+
+.cards{
+    display: flex;
+}
+
+.card>img{
+    width: 300px;
+    height: 450px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding-top: 15px;
+}
+
+.card1{
+   width: 1200px;
+   height: 450px;
+   background-color: rgba(63, 63, 63, 0.21);
+   border-radius: 25px;
+   padding: 15px;
+   margin-left: 30px;
+    display: flex; 
+}
+
+.card2>img{
+    width: 220px;
+    height: 360px;
+    margin: 0 auto;
+}
+
+#root1{
+    width: auto;
+    height: 500px;  
+}
+
+#root2{
+    display: flex;
+    overflow: scroll;
+}
+
+#root3{
+    display: flex;
+    overflow: scroll;
+}
+
+a{
+    width: 150px;
+    font-size: 25px;
+    color: yellow;
+    border: 3px solid black ;
+
+}
+
+p{
+    text-align: center;
+    border: 2px solid black;
+}
+
+.trailer{
+    display: flex;
+}
+
+.coverik{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+}
+
+.video{
+    position: relative;
+    width: 560px;
+    height: 315px;
+}
+
+.popup{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    top: 0;
+    backdrop-filter: blur(5px);
+}
+
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    width: 80px;
+    height: 80px;
+    border: 7px solid rgb(245, 243, 243);
+    border-radius: 50%;
+    border-left-color: red;
+    animation: loader 1.3s linear infinite;
+}
+
+#dark{
+    width: 150px;
+    height: 25px;
+    background-color: rgb(51, 50, 50);
+    color: white;
+}
+
+#Light{
+    width: 150px;
+    height: 25px;
+    background-color: rgb(236, 236, 236);
+    color: rgb(0, 0, 0);
+}
+
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.hide{
+    opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+    
+body{
+    background-color: rgb(50, 50, 50);
+}
+
+.cards{
+    display: block;
+}
+
+.card>img{
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+   margin-left: 30px;
+   padding-top: 15px;
+
+}
+
+.card1{
+   width: 320px;
+   height: 480px;
+   background-color: rgba(0, 0, 0, 0.21);
+   border-radius: 25px;
+   padding: 15px;
+   margin-left: 30px;
+}
+
+.card2>img{
+    width: 220px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+#root2{
+    display: block;
+    padding-top: 450px;
+    overflow: scroll;
+}
+
+#root1{
+    width: auto;
+    height: 300px;  
+}
+
+#root3{
+    width: 500px;
+    display: block;
+    padding-top: 450px;
+    overflow: scroll;
+}
+
+
+a{
+    width: 100px;
+    font-size: 25px;
+    color: yellow;
+    border: 3px solid black ;
+}
+
+p{
+    width: 220px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(245, 243, 243);
+    border-radius: 50%;
+    border-left-color: red;
+    animation: loader 1.3s linear infinite;
+}
+
+#dark{
+    width: 150px;
+    height: 25px;
+    background-color: rgb(51, 50, 50);
+    color: white;
+}
+
+#Light{
+    width: 150px;
+    height: 25px;
+    background-color: rgb(236, 236, 236);
+    color: rgb(0, 0, 0);
+}
+
+}
+
